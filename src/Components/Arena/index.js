@@ -107,7 +107,7 @@ const Arena = ({ characterNFT, setCharacterNFT, currentAccount }) => {
         const criticalNum = await gameContract.s_randomnum();
 
         let critical;
-        if (3 > criticalNum) {
+        if (5 === criticalNum.toNumber()) {
           critical = true;
         } else {
           critical = false;
